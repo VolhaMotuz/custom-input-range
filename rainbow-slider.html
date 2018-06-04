@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Elements</title>
+
+	<link rel="stylesheet" href="rainbow-slider.css" type="text/css" />
+
+	<script src="rainbow-slider.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">Sliders</div>
+		<div class="group">
+			<div class="title"><div class="preview" id="preview1"></div> RGB additive color:</div>
+			<div class="center">
+				<input class="rainbow" type="range" min="0" max="300" step="25" id="rainbowRange1">
+				<div class="strips"></div>
+			</div>
+		</div>
+
+		<div class="group">
+			<div class="title"><div class="preview" id="preview2"></div> Color temperature:</div>
+			<div class="center">
+				<input class="rainbow" type="range" min="0" max="100" step="10" id="rainbowRange2">
+				<div class="strips"></div>
+			</div>
+		</div>
+
+		<div class="group">
+			<div class="title">Lightness:</div>
+			<div class="center">
+				<input class="rainbow" type="range" min="0" max="100" step="10" id="rainbowRange3">
+				<div class="strips"></div>
+				<div class="progress" id="progress3"></div>
+			</div>
+		</div>
+
+		<div class="group">
+			<div class="title">Cold and hot zones:</div>
+			<div class="center">
+				<input type="range" min="-30" max="30" value="10" step="any" class="rainbow temperature" id="rainbowRange4">
+				<div class="progress-temperature" id="progress4">
+					<div class="first-half"><div id="blue"></div></div>
+					<div class="second-half"><div id="red"></div></div>
+				</div>
+				<div class="strips"></div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</body>
+</html>
